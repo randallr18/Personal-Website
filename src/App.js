@@ -9,6 +9,7 @@ function App() {
     <Router>
       <div>
         <Route exact path="/" component={Home} />
+        <Route path="/computer-science-courses" component={ComputerScienceCourses} />
         <Route path="/technical-skills" component={TechnicalSkills} />
         <Route path="/technical-projects" component={TechnicalProjects} />
         <Route path="/reading-list" component={ReadingList} />
@@ -23,7 +24,7 @@ function Home() {
     <div className="App">
   <header className="App-header">
     <br></br>
-    <h1><font size="10">Risher Randall III</font></h1>
+    <h1><font size="10">Risher Randall</font></h1>
     <p>
     <font size="4">
      Web Developer open for opportunities!
@@ -34,27 +35,21 @@ function Home() {
 
     <p>
     <font size="4">
-      I graduated from <a href="https://www.wlu.edu/physics-and-engineering-department">Washington and Lee</a> with an engineering major, and I have completed the software engineering immersive program at <a href="https://flatironschool.com/career-courses/coding-bootcamp/">The Flatiron School</a>.<br></br>
-      I have also recently taken computer science courses at the <a href="https://www.mff.cuni.cz/en/admissions/programmes">Charles University</a> in Prague.
+      I graduated from <a href="https://www.wlu.edu/physics-and-engineering-department" target="_blank" className="App-link">Washington and Lee</a> with an engineering major, and I have completed the software engineering immersive program at <a href="https://flatironschool.com/career-courses/coding-bootcamp/" className="App-link" target="_blank">The Flatiron School</a>.<br></br>
+      I have also recently taken computer science courses at the <a href="https://www.mff.cuni.cz/en/admissions/programmes" className="App-link" target="_blank">Charles University</a> in Prague.
     </font>
     </p>
 
-
-    <h2>Computer Sciences Courses</h2>
-    <text>
-    <font size="4">
-      Programming II • Algorithms and Data Structures • Computer Architecture<br></br>
-
-
-      </font>
-      </text>
-      <h2><Link to="/technical-skills">Technical Skills</Link></h2>
-      <h2><Link to="/technical-projects">Technical Projects</Link></h2>
-      <h2><Link to="/reading-list">Reading List</Link></h2>
-      <h2><Link to="/interests">Interests</Link></h2>
+      <h3><Link to="/computer-science-courses" className="link">Computer Science Courses</Link></h3>
+      <h3><Link to="/technical-skills" className="link">Technical Skills</Link></h3>
+      <h3><Link to="/technical-projects" className="link">Technical Projects</Link></h3>
+      <h3><Link to="/reading-list" className="link">Reading List</Link></h3>
+      <h3><Link to="/interests" className="link">Interests</Link></h3>
       <text>
       <br></br><br></br>
       <font size="5">
+
+
       <a
         className="App-link"
         href="https://github.com/randallr18"
@@ -79,7 +74,9 @@ function Home() {
          rel="noopener noreferrer"
        >
          LinkedIn
-       </a><br></br>
+       </a>
+
+       <br></br>
 
 
         </font>
@@ -95,13 +92,97 @@ function Home() {
   );
 }
 
+
+function ComputerScienceCourses() {
+  return (
+    <div className="App">
+    <header className="App-header2">
+      <h3>&emsp;Algorithms and Data Structures</h3>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Introduction to Algorithms</i>, Cormen, Leiserson, Rivest and Stein<br></br>
+        &emsp;&emsp;&emsp;<strong><a href="https://is.cuni.cz/studium/eng/predmety/index.php?id=66a585dc4e57b525f3fc8dd738e40192&tid=&do=predmet&kod=NTIN060&skr=2018" className="link" target="_blank">Syllabus</a></strong>
+      </font>
+      </text>
+      <h3>&emsp;Computer Architecture</h3>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Computer Orgainization and Design</i>, David A. Patterson and John L. Hennessy<br></br>
+        &emsp;&emsp;&emsp;<strong><a href="https://d3s.mff.cuni.cz/teaching/nswi143" className="link" target="_blank">Syllabus</a></strong>
+      </font>
+      </text>
+      <h3>&emsp;Programming II</h3>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Essential C# 7.0 (6th Edition)</i>, Mark Michaelis<br></br>
+        &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Introduction to Algorithms</i>, Cormen, Leiserson, Rivest and Stein<br></br>
+
+        &emsp;&emsp;&emsp;<strong><a href="https://ksvi.mff.cuni.cz/~dingle/2019/prog_ii/prog_ii.html" className="link" target="_blank">Syllabus</a></strong>
+      </font>
+      </text>
+    </header>
+</div>
+  );
+}
+
+
 function TechnicalSkills() {
   return (
     <div className="App">
-    <header className="App-header">
-      <h2>Languages</h2>
-      <h2>Frameworks</h2>
-      <h2>Tools</h2>
+    <header className="App-header2">
+    <h3>&emsp;Languages</h3>
+    <text>
+    <font size="4">
+      &emsp;&emsp;&emsp;<strong>C#</strong> - intermediate<br></br>
+      &emsp;&emsp;&emsp;<strong>JavaScript</strong> - intermediate<br></br>
+      &emsp;&emsp;&emsp;<strong>Ruby</strong> - intermediate<br></br>
+      &emsp;&emsp;&emsp;<strong>Java</strong> - beginner<br></br>
+      &emsp;&emsp;&emsp;<strong>HTML + CSS</strong> - intermediate<br></br>
+
+
+    </font>
+    </text>
+    <h3>&emsp;Frameworks</h3>
+    <text>
+    <font size="4">
+      &emsp;&emsp;&emsp;React<br></br>
+      &emsp;&emsp;&emsp;React-Redux<br></br>
+      &emsp;&emsp;&emsp;React-Router<br></br>
+      &emsp;&emsp;&emsp;Ruby on Rails<br></br>
+      &emsp;&emsp;&emsp;Sinatra<br></br>
+      </font>
+
+    </text>
+    <h3>&emsp;Tools</h3>
+    <text>
+    <font size="4">
+      &emsp;&emsp;&emsp;Git<br></br>
+      &emsp;&emsp;&emsp;JQuery <br></br>
+      &emsp;&emsp;&emsp;Nokogiri<br></br>
+      &emsp;&emsp;&emsp;Gnuplot <br></br>
+    </font>
+
+    </text>
+    <h3>&emsp;Concepts</h3>
+    <text>
+    <font size="4">
+      &emsp;&emsp;&emsp;Obejct Oriented Programming<br></br>
+      &emsp;&emsp;&emsp;Asymptotic Notation and Big Omega<br></br>
+      &emsp;&emsp;&emsp;RESTful Routing<br></br>
+      &emsp;&emsp;&emsp;Database Architecture<br></br>
+      &emsp;&emsp;&emsp;Software / Hardware Interface<br></br>
+      </font>
+    </text>
+
+
+    <h3>&emsp;Other</h3>
+    <text>
+    <font size="4">
+      &emsp;&emsp;&emsp;MatLab<br></br>
+      &emsp;&emsp;&emsp;AutoDesk Inventer<br></br>
+      &emsp;&emsp;&emsp;Wolfram Mathematica<br></br>
+      </font>
+    </text><br></br><br></br>
     </header>
 </div>
   );
@@ -123,9 +204,21 @@ function TechnicalProjects() {
 function ReadingList() {
   return (
     <div className="App">
-    <header className="App-header">
-      <h2>Current</h2>
-      <h2>Past</h2>
+    <header className="App-header2">
+      <h2>&emsp;Current</h2>
+      <text>
+      <font size="5">
+        &emsp;&emsp;&emsp;Academic<br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;&emsp;&emsp;MatLab<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;AutoDesk Inventer<br></br>
+        &emsp;&emsp;&emsp;Wolfram Mathematica<br></br>
+        </font>
+      </text><br></br>
+      <h2>&emsp;Past</h2>
     </header>
 </div>
   );
@@ -168,3 +261,10 @@ export default App;
 
 
 // <Route path="/topics" component={Topics} />
+
+
+// <text>
+// <font size="4">
+//   Programming II • Algorithms and Data Structures • Computer Architecture<br></br>
+//   </font>
+//   </text>
