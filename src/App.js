@@ -2,19 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ScrollToTop from './ScrollToTop.js';
 
 
 function App() {
   return (
     <Router>
-      <div>
+      <ScrollToTop>
         <Route exact path="/" component={Home} />
         <Route path="/computer-science-courses" component={ComputerScienceCourses} />
         <Route path="/technical-skills" component={TechnicalSkills} />
         <Route path="/technical-projects" component={TechnicalProjects} />
         <Route path="/reading-list" component={ReadingList} />
         <Route path="/interests" component={Interests} />
-      </div>
+        <Route path="/funny" component={Funny} />
+      </ScrollToTop>
     </Router>
   );
 }
@@ -167,10 +169,13 @@ function TechnicalSkills() {
     <text>
     <font size="4">
       &emsp;&emsp;&emsp;Obejct Oriented Programming<br></br>
+      &emsp;&emsp;&emsp;Algorithms and Data Structures<br></br>
       &emsp;&emsp;&emsp;Asymptotic Notation and Big Omega<br></br>
       &emsp;&emsp;&emsp;RESTful Routing<br></br>
       &emsp;&emsp;&emsp;Database Architecture<br></br>
       &emsp;&emsp;&emsp;Software / Hardware Interface<br></br>
+      &emsp;&emsp;&emsp;Mathematical Proofs<br></br>
+
       </font>
     </text>
 
@@ -191,10 +196,25 @@ function TechnicalSkills() {
 function TechnicalProjects() {
   return (
     <div className="App">
-    <header className="App-header">
-      <h2>Flatbook</h2>
-      <h2>Sorting Algorithm Analysis</h2>
-      <h2>Fifa World Cup</h2>
+    <header className="App-header2">
+      <a href="https://github.com/randallr18/Flatbook-3.0" target="_blank" className="link"><h2>&emsp;Flatbook</h2></a>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;A confined network designed to propel Flatiron students' careers as software engineers. Ruby on Rails backend, React - Redux frontend.<br></br>
+        </font>
+      </text><br></br>
+      <a href="https://github.com/randallr18/Sorting-Algorithm--Analysis" target="_blank" className="link"><h2>&emsp;Sorting Algorithm Analysis</h2></a>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;Analyzing the run time of bubble, insertion, quick, merge and radix sort. C#.<br></br>
+        </font>
+      </text><br></br>
+      <a href="https://github.com/randallr18/World_Cup" target="_blank" className="link"><h2>&emsp;Fifa World Cup</h2></a>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;A command line application which provided up to data statistics on the 2018 Fifa World Cup. Sinatra, SQL, Fifa API.<br></br>
+        </font>
+      </text><br></br>
     </header>
 </div>
   );
@@ -208,17 +228,58 @@ function ReadingList() {
       <h2>&emsp;Current</h2>
       <text>
       <font size="5">
-        &emsp;&emsp;&emsp;Academic<br></br>
+        &emsp;&emsp;&emsp;<u>Academic</u><br></br>
         </font>
       </text><br></br>
       <text>
       <font size="4">
-        &emsp;&emsp;&emsp;&emsp;&emsp;MatLab<br></br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;AutoDesk Inventer<br></br>
-        &emsp;&emsp;&emsp;Wolfram Mathematica<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Learning React</i> - Alex Banks & Eve Porcello<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Version Control with Git</i> - Jon Loeliger & Matthew McCullough <br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Eloquent JavaScript</i> - Marijn Haverbeke<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Full Stack Developer</i> - Chris Northwood<br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="5">
+        &emsp;&emsp;&emsp;<u>Leisure</u><br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>How The Mind Works</i> - Stephen Pinker<br></br>
         </font>
       </text><br></br>
       <h2>&emsp;Past</h2>
+      <text>
+      <font size="5">
+        &emsp;&emsp;&emsp;<u>Academic</u><br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Intoduction to Algorithms</i> - Cormen, Leiserson, Rivest and Stein<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Essential C# 7.0 (6th Edition)</i> - Mark Michaelis<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Computer Orginization and Design</i> - David A. Patterson and John L. Hennessy<br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="5">
+        &emsp;&emsp;&emsp;<u>Leisure</u><br></br>
+        </font>
+      </text><br></br>
+      <text>
+      <font size="4">
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Deep Work</i>, Cal Newport<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Hillbilly Elegy</i>, J.D. Vance<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Anna Karenina</i> - Leo Tolstoy<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Perfect Pass</i> - S. C. Gwynne<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Homo Deus</i> - Yuval Noah Harari<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Why We Sleep</i> - Matthew Walker<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Sun & The Moon & The Rolling Stones</i> - Rich Cohen<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Rebel Yell</i> - S. C. Gweynne<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Defining Decade</i> - Meg Jay<br></br>
+        </font>
+      </text><br></br>
     </header>
 </div>
   );
@@ -227,9 +288,46 @@ function ReadingList() {
 function Interests() {
   return (
     <div className="App">
-    <header className="App-header">
-      <h2>Chess</h2>
-      <h2>Bridge</h2>
+    <header className="App-header2">
+
+
+    <text>
+    <font size="5">
+    <br></br>
+      &emsp;&emsp;<strong>Tennis</strong><br></br><br></br>
+      &emsp;&emsp;<strong>Chess</strong><br></br><br></br>
+      &emsp;&emsp;<strong>Bridge</strong><br></br><br></br>
+      &emsp;&emsp;<strong>Houston Texans</strong><br></br><br></br>
+      &emsp;&emsp;<strong>Houston Rockets</strong><br></br><br></br>
+      &emsp;&emsp;<strong><u><Link to="/funny" className="link">Funny</Link></u></strong><br></br><br></br>
+
+
+
+    </font>
+    </text>
+
+    </header>
+</div>
+  );
+}
+
+function Funny() {
+  return (
+    <div className="App">
+    <header className="App-header2">
+    <text>
+    <font size="5">
+    <br></br>
+      &emsp;&emsp;<strong>Semi-Pro</strong><br></br><br></br>
+      &emsp;&emsp;&emsp;<img src={"https://a.ltrbxd.com/resized/sm/upload/q9/18/dx/j2/semi-pro-1200-1200-675-675-crop-000000.jpg?k=d900340c96"} height="270" width="440"/><br></br><br></br>
+      &emsp;&emsp;<strong><a href="https://www.youtube.com/watch?v=6FeujTA15n0" target="_blank" className="link">https://www.youtube.com/watch?v=6FeujTA15n0</a></strong><strong></strong><br></br><br></br>
+      &emsp;&emsp;<strong><a href="https://www.youtube.com/watch?v=t4N93jLVPIA" target="_blank" className="link">https://www.youtube.com/watch?v=t4N93jLVPIA</a></strong><strong></strong><br></br><br></br>
+      &emsp;&emsp;<strong><a href="https://www.youtube.com/watch?v=Vhh_GeBPOhs" target="_blank" className="link">https://www.youtube.com/watch?v=Vhh_GeBPOhs</a></strong><strong></strong><br></br><br></br>
+
+      &emsp;&emsp;<strong></strong><br></br><br></br>
+    </font>
+    </text>
+
     </header>
 </div>
   );
@@ -238,9 +336,20 @@ function Interests() {
 
 
 
+
 export default App;
 
-
+// class ScrollToTop extends Component {
+//   componentDidUpdate(prevProps) {
+//     if (this.props.location.pathname !== prevProps.location.pathname) {
+//       window.scrollTo(0, 0);
+//     }
+//   }
+//
+//   render() {
+//     return this.props.children;
+//   }
+// }
 
 // <div className="App">
 //   <header className="App-header">
