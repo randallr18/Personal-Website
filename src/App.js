@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ScrollToTop from './ScrollToTop.js';
+import { Button, Icon } from 'semantic-ui-react'
 
 
 function App() {
@@ -32,20 +33,19 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-      <br></br>
-      <h1><font size="10">Risher Randall</font></h1>
+      <h1 className='realign'><font size="10">Risher Randall</font></h1>
         <p><font size="4">Web Developer open for opportunities!</font></p>
-        <img src={"https://avatars1.githubusercontent.com/u/38865506?s=400&u=c1c19a5b1ee87d7cb2b42cb2614e98edc519dfcc&v=4"} className="App-logo" alt="logo" />
+        <img src={"file-5.jpg"} className="App-logo" alt="logo" />
         <p><font size="4">
           I graduated from <a href="https://www.wlu.edu/physics-and-engineering-department" target="_blank" className="App-link">Washington and Lee</a> with an engineering major, and I have completed the software engineering immersive program at <a href="https://flatironschool.com/career-courses/coding-bootcamp/" className="App-link" target="_blank">The Flatiron School</a>.<br></br>
           I have also recently taken computer science courses at the <a href="https://www.mff.cuni.cz/en/admissions/programmes" className="App-link" target="_blank">Charles University</a> in Prague.
         </font></p>
 
-      <h3><Link to="/computer-science-courses" className="link">Computer Science Courses</Link></h3>
-      <h3><Link to="/technical-skills" className="link">Technical Skills</Link></h3>
-      <h3><Link to="/technical-projects" className="link">Technical Projects</Link></h3>
-      <h3><Link to="/reading-list" className="link">Reading List</Link></h3>
-      <h3><Link to="/interests" className="link">Interests</Link></h3>
+      <h2><Link to="/computer-science-courses" className="link">Computer Science Courses</Link></h2>
+      <h2><Link to="/technical-skills" className="link">Technical Skills</Link></h2>
+      <h2><Link to="/technical-projects" className="link">Technical Projects</Link></h2>
+      <h2><Link to="/reading-list" className="link">Reading List</Link></h2>
+      <h2><Link to="/interests" className="link">Interests</Link></h2>
 
       <text>
       <br></br><br></br>
@@ -70,20 +70,19 @@ function ComputerScienceCourses() {
   return (
     <div className="App">
     <header className="App-header2">
-
-      <h3>&emsp;Algorithms and Data Structures</h3>
+      <h2 className='realign'>&emsp;Algorithms and Data Structures</h2>
       <text><font size="4">
         &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Introduction to Algorithms</i>, Cormen, Leiserson, Rivest and Stein<br></br>
         &emsp;&emsp;&emsp;<strong><a href="https://is.cuni.cz/studium/eng/predmety/index.php?id=66a585dc4e57b525f3fc8dd738e40192&tid=&do=predmet&kod=NTIN060&skr=2018" className="link" target="_blank">Syllabus</a></strong>
       </font></text>
 
-      <h3>&emsp;Computer Architecture</h3>
+      <h2>&emsp;Computer Architecture</h2>
       <text><font size="4">
         &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Computer Orgainization and Design</i>, David A. Patterson and John L. Hennessy<br></br>
         &emsp;&emsp;&emsp;<strong><a href="https://d3s.mff.cuni.cz/teaching/nswi143" className="link" target="_blank">Syllabus</a></strong>
       </font></text>
 
-      <h3>&emsp;Programming II</h3>
+      <h2>&emsp;Programming II</h2>
       <text><font size="4">
         &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Essential C# 7.0 (6th Edition)</i>, Mark Michaelis<br></br>
         &emsp;&emsp;&emsp;<strong>Textbook</strong> - <i>Introduction to Algorithms</i>, Cormen, Leiserson, Rivest and Stein<br></br>
@@ -102,7 +101,7 @@ function TechnicalSkills() {
     <div className="App">
     <header className="App-header2">
 
-    <h3>&emsp;Languages</h3>
+    <h2 className='realign'>&emsp;Languages</h2>
     <text><font size="4">
       &emsp;&emsp;&emsp;<strong>C#</strong> - intermediate<br></br>
       &emsp;&emsp;&emsp;<strong>JavaScript</strong> - intermediate<br></br>
@@ -111,7 +110,7 @@ function TechnicalSkills() {
       &emsp;&emsp;&emsp;<strong>HTML + CSS</strong> - intermediate<br></br>
     </font></text>
 
-    <h3>&emsp;Frameworks</h3>
+    <h2>&emsp;Frameworks</h2>
     <text><font size="4">
       &emsp;&emsp;&emsp;React<br></br>
       &emsp;&emsp;&emsp;React-Redux<br></br>
@@ -120,7 +119,7 @@ function TechnicalSkills() {
       &emsp;&emsp;&emsp;Sinatra<br></br>
     </font></text>
 
-    <h3>&emsp;Tools</h3>
+    <h2>&emsp;Tools</h2>
     <text><font size="4">
       &emsp;&emsp;&emsp;Git<br></br>
       &emsp;&emsp;&emsp;JQuery <br></br>
@@ -128,7 +127,7 @@ function TechnicalSkills() {
       &emsp;&emsp;&emsp;Gnuplot <br></br>
     </font></text>
 
-    <h3>&emsp;Concepts</h3>
+    <h2>&emsp;Concepts</h2>
     <text><font size="4">
       &emsp;&emsp;&emsp;Obejct Oriented Programming<br></br>
       &emsp;&emsp;&emsp;Algorithms and Data Structures<br></br>
@@ -140,7 +139,7 @@ function TechnicalSkills() {
       </font></text>
 
 
-    <h3>&emsp;Other</h3>
+    <h2>&emsp;Other</h2>
     <text><font size="4">
       &emsp;&emsp;&emsp;MatLab<br></br>
       &emsp;&emsp;&emsp;AutoDesk Inventer<br></br>
@@ -160,7 +159,7 @@ function TechnicalProjects() {
     <div className="App">
     <header className="App-header2">
 
-      <a href="https://github.com/randallr18/Flatbook-3.0" target="_blank" className="link"><h2>&emsp;Flatbook</h2></a>
+      <a href="https://github.com/randallr18/Flatbook-3.0" target="_blank" className="link"><h2 className='realign'>&emsp;Flatbook</h2></a>
       <text><font size="4">
         &emsp;&emsp;&emsp;A confined network designed to propel Flatiron students' careers as software engineers. Ruby on Rails backend, React - Redux frontend.<br></br>
       </font></text><br></br>
@@ -173,9 +172,21 @@ function TechnicalProjects() {
       <a href="https://github.com/randallr18/World_Cup" target="_blank" className="link"><h2>&emsp;Fifa World Cup</h2></a>
       <text><font size="4">
         &emsp;&emsp;&emsp;A command line application which provided up to data statistics on the 2018 Fifa World Cup. Sinatra, SQL, Fifa API.<br></br>
-        </font></text>
+        </font></text><br></br>
 
-    <br></br>
+        <a href="https://github.com/randallr18/Kinematic-and-Kinetic-Analysis" target="_blank" className="link"><h2>&emsp;Kinematic and Kinetic Analysis</h2></a>
+        <text><font size="4">
+          &emsp;&emsp;&emsp;Kinematic and Kinetic analysis of a 6-bar mechanism designed for a purely mechanical snow plow.<br></br>
+          </font></text><br></br>
+
+          <a  className="link"><h2>&emsp;HVAC Energy Conservation Appliance</h2></a>
+          <text><font size="4">
+            &emsp;&emsp;&emsp;An engineered system to facilitate sustainable usage of the HVAC system within apartments.<br></br>
+            </font></text><br></br>
+
+
+
+
     </header>
     </div>
   );
@@ -189,39 +200,40 @@ function ReadingList() {
     <div className="App">
     <header className="App-header2">
 
-      <h2>&emsp;Current</h2>
+      <h1 className='realign'>&emsp;Current</h1>
 
       <text><font size="5">
         &emsp;&emsp;&emsp;<u>Academic</u><br></br>
-      </font></text><br></br>
+      </font></text>
       <text><font size="4">
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Learning React</i> - Alex Banks & Eve Porcello<br></br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Version Control with Git</i> - Jon Loeliger & Matthew McCullough <br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Eloquent JavaScript</i> - Marijn Haverbeke<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Full Stack Developer</i> - Chris Northwood<br></br>
         </font></text><br></br>
 
       <text><font size="5">
-        &emsp;&emsp;&emsp;<u>Leisure</u><br></br>
-      </font></text><br></br>
+        &emsp;&emsp;&emsp;<u>Leisure</u>
+      </font></text>
       <text><font size="4">
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>How The Mind Works</i> - Stephen Pinker<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>AI Super-Powers, China, Silicon Valley, and The New World Order</i> - Kai-Fu Lee<br></br>
       </font></text><br></br>
 
-      <h2>&emsp;Past</h2>
+      <h1>&emsp;Past</h1>
 
       <text><font size="5">
-        &emsp;&emsp;&emsp;<u>Academic</u><br></br>
-      </font></text><br></br>
+        &emsp;&emsp;&emsp;<u>Academic</u>
+      </font></text>
       <text><font size="4">
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Intoduction to Algorithms</i> - Cormen, Leiserson, Rivest and Stein<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Essential C# 7.0 (6th Edition)</i> - Mark Michaelis<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Computer Orginization and Design</i> - David A. Patterson and John L. Hennessy<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Version Control with Git</i> - Jon Loeliger & Matthew McCullough <br></br>
       </font></text><br></br>
 
       <text><font size="5">
-        &emsp;&emsp;&emsp;<u>Leisure</u><br></br>
-      </font></text><br></br>
+        &emsp;&emsp;&emsp;<u>Leisure</u>
+      </font></text>
       <text><font size="4">
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Deep Work</i>, Cal Newport<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Hillbilly Elegy</i>, J.D. Vance<br></br>
@@ -230,7 +242,7 @@ function ReadingList() {
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Homo Deus</i> - Yuval Noah Harari<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>Why We Sleep</i> - Matthew Walker<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Sun & The Moon & The Rolling Stones</i> - Rich Cohen<br></br>
-        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Rebel Yell</i> - S. C. Gweynne<br></br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<i>Rebel Yell</i> - S. C. Gwynne<br></br>
         &emsp;&emsp;&emsp;&emsp;&emsp;<i>The Defining Decade</i> - Meg Jay<br></br>
       </font></text><br></br>
 
